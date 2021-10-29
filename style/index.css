@@ -47,146 +47,71 @@ body{
     color: #4f4f4f;
     background-color: #FBFFFB;
 }
-h1{
-    color: #4f4f4f;
-    font-size: 3rem;
-    font-family: 'Oxygen', sans-serif;
-}
-h2{
-    font-size: 3rem;
-}
-h3{
-    font-size: 2.2rem;
-}
-h2, h3{
-    color: #4f4f4f;
-    text-align: center;
-    font-family: 'Oxygen', sans-serif;
-    margin: 5%;
-}
-a{
-    font-size: 2rem;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-decoration: none;
-    color: #4f4f4f;
-}
 button{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.8rem;
-    padding: 2% 4%;
-    margin-top: -2%;
-    margin-left: 40%;
-    margin-bottom: 2%;  
+    border: 1px solid black;
+    color: black;
+    background-color: #fff;
+    padding: 5px 10px;
+    transition: 1s;
 }
-
-/* Header Section Styles */
+button:hover{
+    border: 1px solid white;
+    color: white;
+    background-color: slategrey;
+}
+button a{
+    text-decoration: none;
+    color: inherit; /* This is telling the a to get the information from the button you are a part of*/
+}
+/* Header and Nav */
+header{
+    background-color: lightgrey;
+    padding: 2%;
+    margin: 15px;
+}
 nav{
-    padding: 2% 3%;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    top: 0;
-    z-index: 999; /* Everything should scrool behind this*/
-    background-color: rgb(236, 231, 225);
-}
-.links{
-    width: 30%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
-/* Top Section Styles */
-#about{
+/* Top Section */
+.topsection{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    background-color: rgb(236, 231, 225);
 }
-
-.profile{
-    width: 62%;
-    height: 50vh;
+.description{
+    padding: 50px 20px 20px 20px;
+    text-align: center;
+}
+.description button{
+    margin: 3% 0 3% 0;
+}
+.description p{
     margin-left: 5%;
-    margin-bottom: -1%;
+    margin-right: 5%;
 }
-
-.profile .profile_title .profile_text{
-    width: 50%;
-}
-#about{
-    padding-bottom: 0%;
-}
-
-/* Grid Section Styles */
-.box{
-    width:33.3%;
-    height:60vh;
-}
-.box1{
-    background-image: url('https://picsum.photos/200');
-    
-}
-.box2{
-    
-}
-.box3{
-    background-image: url('https://picsum.photos/200');
-}
-.container{
-    display:flex;
-    flex-wrap: wrap;
+/* Row Section */
+.row{
+    display: flex;
     justify-content: space-evenly;
+    flex-direction: row;
+    padding: 20px;
+}
+.portfolio-element{
     text-align: center;
 }
-.text_box{
-    margin: 20% 5% 0 5%;
-}
-/* Grid with Text Section Styles */
-.container2{
+
+/* Mid Section */
+.midsection{
     display: flex;
-    flex-wrap: wrap;
-}
-.nitp, .duck, .kido, .text{
-    width: 50%;
-}
-.text{
-    padding: 5%;
-    display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
-    text-align: center;
-}
-.text div{
-    width: 60%;
-}
-.text button{
-    align-items: center;
-    color: #fff;
-    border: 2px solid #636161;
-    transition: 2s;
-}
-.text button:hover{
-    background-color: #fff;
-    color:#266035
-}
-.nitp{
-    background-image: url('https://picsum.photos/200');
-}
-.duck{
-    background-image: url('https://picsum.photos/200');
-}
-.kido{
-    background-image: url('https://picsum.photos/200');
 }
 
-
-/* Footer Section */
+/* Footer */
 footer{
-    background-color: rgb(236, 231, 225);
-    
-}
-.bottom{
-    width: 25%;
-    margin-bottom: 5%;
-    margin-left: 36%;
+    background-color: lightgrey;
+    text-align: center;
+    padding: 2%;
 }
