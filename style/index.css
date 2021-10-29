@@ -34,7 +34,7 @@ footer, header, hgroup, menu, nav, section {
     padding:0;
     margin:0;
     max-width:100%;
-    /* border:1px solid grey;  */
+    border:1px solid grey; 
 }
 
 /* General Styles */
@@ -48,7 +48,7 @@ body{
     background-color: #FBFFFB;
 }
 h1{
-    color: #266035;
+    color: #4f4f4f;
     font-size: 3rem;
     font-family: 'Oxygen', sans-serif;
 }
@@ -59,7 +59,7 @@ h3{
     font-size: 2.2rem;
 }
 h2, h3{
-    color: #266035;
+    color: #4f4f4f;
     text-align: center;
     font-family: 'Oxygen', sans-serif;
     margin: 5%;
@@ -68,7 +68,7 @@ a{
     font-size: 2rem;
     font-family: 'Source Sans Pro', sans-serif;
     text-decoration: none;
-    color: #266035;
+    color: #4f4f4f;
 }
 button{
     font-family: 'Source Sans Pro', sans-serif;
@@ -87,7 +87,7 @@ nav{
     width: 100%;
     top: 0;
     z-index: 999; /* Everything should scrool behind this*/
-    background-color: rgba(255, 225, 225, 0.8);
+    background-color: rgb(236, 231, 225);
 }
 .links{
     width: 30%;
@@ -97,39 +97,75 @@ nav{
 }
 
 /* Top Section Styles */
-#top{
+#about{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(236, 231, 225);
 }
 
-#top .profile{
-    height: 45vh;
-    width: 50%;
-    align-items: center;
-
-}
-#top img{
+.profile{
+    width: 62%;
     height: 50vh;
+    margin-left: 5%;
+    margin-bottom: -1%;
 }
 
-#top .text{
-    
-    align-items: center;
-    width: 45%;
-    margin-left: 26%;
+.profile .profile_title .profile_text{
+    width: 50%;
+}
+#about{
+    padding-bottom: 0%;
 }
 
 /* Title Section Styles */
 
 
 /* Grid Section Styles */
-.grid{
+.container{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
+.nitp, .duck, .kido, .text{
+    width: 50%;
+}
+.text{
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.text div{
+    width: 60%;
+}
+.text button{
+
+    color: #fff;
+    border: 2px solid #636161;
+    transition: 2s;
+}
+.text button:hover{
+    background-color: #fff;
+    color:#266035
+}
+.nitp{
+    background-image: url('https://picsum.photos/200');
+}
+.duck{
+    background-image: url('https://picsum.photos/200');
+}
+.kido{
+    background-image: url('https://picsum.photos/200');
+}
+
 
 /* Footer Section */
+footer{
+    background-color: rgb(236, 231, 225);
+    
+}
+.bottom{
+    width: 25%;
+    margin-bottom: 5%;
+    margin-left: 36%;
+}
