@@ -67,11 +67,14 @@ button a{
 header{
     background-color: lightgrey;
     padding: 2%;
-    margin: 15px;
+    margin: 0;
 }
 nav{
     display: flex;
     justify-content: space-around;
+}
+h1{
+    font-size: 2rem;
 }
 
 /* Top Section */
@@ -114,4 +117,107 @@ footer{
     background-color: lightgrey;
     text-align: center;
     padding: 2%;
+}
+
+/* Media Queries Section Styles */
+
+/* Tablet Section Styles - 800px */
+
+@media (max-width: 800px) {
+    header{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2%;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+    button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+        margin: .7% 3%;
+    }
+    .topsection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .topsection div{
+        width: 90%;
+    }
+    .description{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .row div{
+        width: 40%;
+    }
+}
+
+/* Phone Section Styles - 500px */
+
+@media (max-width: 500px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2%;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+
+    }
+    button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 35%;
+        margin: .7% 0;
+    }
+    
+
+    .topsection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .topsection div{
+        width: 90%;
+    }
+    .description{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .row div{
+        width: 40%;
+    }
+    
+    
 }
