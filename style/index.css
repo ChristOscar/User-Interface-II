@@ -115,3 +115,17 @@ footer{
     text-align: center;
     padding: 2%;
 }
+
+/* Media Queries Section Styles */
+
+/* Tablet Section Styles - 800px */
+
+@media (max-width: 800px) {
+    
+}
+
+/* Phone Section Styles - 500px */
+
+@media (max-width: 500px) {
+    
+}
